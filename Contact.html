@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="icon" href="PGT.jpg" type="image/icon type">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="class.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body onload="myFunction()" style="background-color: #E3E3E3;">
+	<!-- perloader -->
+	<div id="loading"></div>
+	<a href="" id="top"></a>
+	<!-- Navbar header -->
+	<div class="container-fluid sticky-top">
+		<nav class="navbar navbar-expand-md navbar-light" style="background-color: #c5c6c7">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="header.jpg" height="50px" width="50px" alt="Logo">
+         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            
+            <div class="ml-auto Navfont">
+	            <ul id="contentshift" class="navbar-nav">
+	              <li class="nav-item mx-1">
+	                <a class="nav-link" href="Home.html">Home</a>
+	              </li>
+	              <li class="nav-item mx-1">
+	                <a class="nav-link" href="Courses.html">Courses</a>
+	              </li>
+	              <li class="nav-item mx-1">
+	                <a class="nav-link" href="About.html">About</a>
+	              </li>
+	              <li class="nav-item mx-1 active">
+	                <a class="nav-link" href="#top">Contact</a>
+	              </li>
+	            </ul>
+	        </div>    
+          </div>
+        </nav>
+    </div>
+    <div id="contactheader" class="sticky-top" style="text-align: right;"> 
+	  <a href="https://wa.me/919825591527" id="contact1" data-toggle="tooltip" title="WhatsApp">9825591527&nbsp;&nbsp; <img class="" src="whatsapp-logo.png" height="21px" width="23px"></a>
+	  <a href="tel:+91 9428298765" id="contact2" data-toggle="tooltip" title="Call Now">9428298765&nbsp;&nbsp; <img class="" src="phone-call.png" height="21px" width="23px"></a>
+	  <a href="mailto:triraj42@gmail.com" id="emailid" data-toggle="tooltip" title="Email-ID">triraj42@gmail.com&nbsp;&nbsp; <i class="fa fa-envelope"></i></a>
+	</div>
+    <!-- Contact Us Form -->
+    <div id="contentshift">
+	    <div class="container-fluid">
+	    	<div class="container">
+	    		<div style="height: 80px;width: 100%;"></div>
+	    		<div class="card">
+					  <div class="card-body">
+					    <h2 class="card-title fonth">Contact Us</h2>
+						<form target="_blank">
+						 <div class="row">
+						  <div class="form-group col-md-6">
+						    <input type="text" class="form-control" id="name" placeholder="Name" required>
+						  </div>
+						  <div class="form-group col-md-6">
+						    <input type="email" class="form-control" id="email" placeholder="Email" required>
+						  </div>
+						 </div>
+						 <div class="row">
+						  <div class="form-group col-md-6">
+						    <input type="text" class="form-control" id="phone" placeholder="Phone Number" required>
+						    <span id="numloc" style="color: red;"></span>
+						  </div>
+						  <div class="form-group col-md-6">
+						  	
+							<select id="subject" class="form-control">
+							  <option value="">Select Subject</option>	
+							  <option value="B.B.A">B.B.A</option>
+							  <option value="B.Com">B.Com</option>
+							  <option value="M.Com">M.Com</option>
+							  <option value="S.S.L">S.S.L</option>
+							  <option value="Clerk Exam">Clerk Exam</option>
+							  <option value="R.R.B.E">R.R.B.E</option>
+							</select>
+						  </div>
+						 </div>
+						 <div class="row">
+						  <div class="form-group col-md-6">
+						    <textarea class="form-control" rows="5" id="address" placeholder="Address"></textarea>
+						  </div>
+						  
+						  <div class="form-group col-md-6">
+						    <textarea class="form-control" rows="5" id="comment" placeholder="comments"></textarea>
+						  </div>
+						  </div>
+						  		 
+						</form>
+						<button type="submit" class="btn btn-primary float-right" data-toggle="tooltip" title="Send" id="Send">Send</button>
+						<br><br><br>
+						<div class="alert alert-success" id="success" style="visibility:hidden; display: none;">
+						</div>
+						<div class="alert alert-warning" id="warning" style="visibility:hidden; display: none;"> 
+						</div> 	  
+					  </div>
+				</div>
+	    	</div>
+	    </div>
+	    <!-- Google Maps -->
+	    <div class="container-fluid">
+	    	<div class="container">
+	    		<div style="height: 80px;width: 100%;"></div>
+	    		<h2 class="text-center fonth"><strong>Find Us in Google Map</strong></h2>
+	    		<div style="height: 80px;width: 100%;"></div>
+	    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29534.501558948952!2d70.75208727402155!3d22.285083966973314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cbce3e4e7ad5%3A0x2d528f9a335aaa4e!2sPrerna+Group+Tuition!5e0!3m2!1sen!2sin!4v1559223601156!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    	</div>
+	    </div>
+	</div>    
+    <!-- Footer -->
+    <div style="height: 80px;width: 100%;"></div>
+	<div class="container-fluid" style="background-color: #303C6C; color: white;">
+		<div class="container">
+			<div class="row" id="contentshift">
+				<div style="height: 80px;width: 100%;"></div>
+				<div class="col-md-5 col-lg-4 text-left" class="fonth">
+						<h3 style="color: #ec4e20;">Contact Details</h3>
+						<hr class="featurette-divider" style="width: 80%;">
+						<p><i class="fa fa-envelope"></i>  <a class="ap" href="mailto:triraj42@gmail.com">triraj42@gmail.com</a></p>
+						<hr class="featurette-divider" style="width: 80%;">
+		                <p><i class="fa fa-phone"></i>  <a class="ap" href="tel:+91 98255 91257">98255 91527</a> , <a class="ap" href="tel:+91 94282 98765">98255 91527</a></p>
+		                <hr class="featurette-divider" style="width: 80%;">
+		                <p><i class="material-icons" style="font-size: 15px">&#xe55f;</i>  20,New Jagnath,Sampati<br>&nbsp;&nbsp;&nbsp;&nbsp;complex,Above Super <br>&nbsp;&nbsp;&nbsp;&nbsp;Selection,Rajkot</p>
+		                <hr class="featurette-divider" style="width: 80%;">
+		                <p><a href="https://www.facebook.com/prernagrouptuition/?ti=as" class="a" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook-square p-i" style="font-size:24px"></i></a>  <a href="https://www.linkedin.com/in/bankim-trivedi-202577105" class="a" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin-square p-i" style="font-size:24px"></i></a></p>
+		        </div>
+		        <div class="col-md-3 col-lg-4 text-left">
+		        	<h3 style="color: #ec4e20;">Quick Links</h3>
+		        	<hr class="featurette-divider" style="width: 60%;">
+		        	<ul class="ul1">
+		        		<li class="li1 mt-3"><i style="font-size:16px" class="fa">&#xf105;</i><a href="Home.html">  Home</a></li>
+		        		<li class="li1 mt-3"><i style="font-size:16px" class="fa">&#xf105;</i><a href="About.html">  About Us</a></li>
+		        		<li class="li1 mt-3"><i style="font-size:16px" class="fa">&#xf105;</i><a href="Courses.html">  Courses</a></li>
+		        		<li class="li1 mt-3"><i style="font-size:16px" class="fa">&#xf105;</i><a href="#top">  Contact</a></li>
+		        	</ul>	
+		        </div>
+		        <div class="col-md-4 col-lg-4 text-left">
+		        	<h3 style="color: #ec4e20;">Our Courses</h3>
+		        	<hr class="featurette-divider" style="width: 65%;">
+		        	<ul class="ul1">
+		        		<li class="li1 mt-3"><i style="font-size:16px" class="fa">&#xf105;</i><a href="Courses.html">  B.B.A</a></li>
+		        		<li class="li1 mt-3"><i style="font-size:16px" class="fa">&#xf105;</i><a href="Courses.html">  B.Com</a></li>
+		        		<li class="li1 mt-3"><i style="font-size:16px" class="fa">&#xf105;</i><a href="Courses.html">  M.Com</a></li>
+		        		<li class="li1 mt-3"><i style="font-size:16px" class="fa">&#xf105;</i><a href="Courses.html">  Competition Exams</a></li>
+		        	</ul>	
+		        </div>
+	        </div>
+		</div>
+		
+		<div class="container">
+			<hr class="featurette-divider">
+			<div class="text-center">
+				Copyright &#169; 2019, Prerna Group Tuition
+				<div style="height: 20px;width: 100%;"></div>
+			</div>	
+		</div>
+	</div>
+	<script>
+		$(document).on('click','#Send',function (){
+		var Name = $('#name').val();
+		var email = $('#email').val();
+		var Phone = $('#phone').val();
+		var Subject = $('#subject').val();
+		var Address = $('#address').val();
+		var Comment = $('#comment').val();
+		var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(Name==""){
+				document.getElementById("warning").style.display = "block";
+				document.getElementById("warning").style.visibility = "visible";
+				document.getElementById("warning").innerHTML = "<strong>Warning!</strong> Pleace Enter full name";
+				document.getElementById("success").style.visibility = "hidden";
+		}	
+		
+		else if (email == '' || !re.test(email))
+		{
+		    document.getElementById("warning").style.visibility = "visible";
+			document.getElementById("warning").innerHTML = "<strong>Warning!</strong> Pleace Enter valid Email ";
+			document.getElementById("success").style.visibility = "hidden";
+		}
+
+		else if(Phone==""){
+			document.getElementById("warning").style.display = "block";
+			document.getElementById("warning").style.visibility = "visible";
+			document.getElementById("warning").innerHTML = "<strong>Warning!</strong> Pleace Enter valid Mobile Number ";
+			document.getElementById("success").style.visibility = "hidden";
+		}
+		
+		else if(Subject==""){
+				document.getElementById("warning").style.display = "block";
+				document.getElementById("warning").style.visibility = "visible";
+				document.getElementById("warning").innerHTML = "<strong>Warning!</strong> Pleace select one subject ";
+				document.getElementById("success").style.visibility = "hidden";
+		}
+
+			
+		else{	 
+		$.ajax({
+			url:"Contactus.php",
+			method:"post",
+			data:{Name:Name ,email:email ,Phone:Phone ,Subject:Subject ,Address:Address ,Comment:Comment},
+			success:function(){
+				document.getElementById("success").style.display = "block";
+				document.getElementById("success").style.visibility = "visible";
+				document.getElementById("success").innerHTML = "<strong>Success!</strong> Thanks for Contact us";
+				document.getElementById("warning").style.visibility = "hidden";
+				document.getElementById("warning").style.display = "none";
+			},
+			error: function(data){
+            console.log("error");
+        	}
+			});
+		}
+		});   
+		//perloader
+		var preloader = document.getElementById("loading");
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+		//tooltip
+		$(document).ready(function(){
+		  $('[data-toggle="tooltip"]').tooltip(); 
+		});
+	</script>
+</body>
+</html>
